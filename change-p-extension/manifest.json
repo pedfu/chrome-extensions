@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "ChangeAllParagraphs",
+    "description": "Allow you to change paragrath",
+    "version": "0.1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ],
+    "permissions": ["tabs", "<all_urls>"],
+    "action": {
+        "default_icon": {
+          "16": "icon.png",
+          "24": "icon.png",
+          "32": "icon.png"
+        },
+        "default_title": "ChangeAllParagraphs",
+        "default_popup": "popup.html"
+      }
+}

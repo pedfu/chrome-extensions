@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Word of the day",
+    "description": "A extension that shows you a new word each day.",
+    "version": "0.1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "chrome_url_overrides" : {
+        "newtab": "newtab.html"
+    }
+}

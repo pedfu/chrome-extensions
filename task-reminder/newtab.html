@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily tasks</title>
+</head>
+<body>
+    <main class="main-container flex-column">
+        <div class="container flex-column">
+            <h2 id="title">TODAY'S TASKS</h2>
+            <form id="form">
+                <input type="text" name="task" placeholder="I have to..." autocomplete="off"/>
+                <button>+</button>
+            </form>
+            <ul class="todo-list flex-column">
+            </ul>
+            <div class="addTask flex">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+            </div>
+        </div>
+    </main>
+    <script src="newtab.js"></script>
+</body>
+</html>

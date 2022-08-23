@@ -1,0 +1,26 @@
+{
+    "name": "No Distractions",
+    "version": "0.1.0",
+    "description": "Avoid the feeling of accessing an especific website you like while focusing. You can add websites to block for some time or until you finish what you have to do.",
+    "host_permissions": ["<all_urls>"],
+    "permissions": ["storage", "tabs", "webRequest", "webRequestBlocking", "<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/ext-icon.png",
+        "24": "assets/ext-icon.png",
+        "32": "assets/ext-icon.png"
+      },
+      "default_title": "No Distractions",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}

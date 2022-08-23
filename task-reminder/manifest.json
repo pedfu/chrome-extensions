@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Task Reminder",
+    "description": "Everytime you open a new tab you can see all daily tasks and add others.",
+    "version": "0.1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage"],
+    "chrome_url_overrides" : {
+        "newtab": "newtab.html"
+    }
+}
