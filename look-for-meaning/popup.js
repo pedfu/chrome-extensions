@@ -17,8 +17,8 @@ const getSelectedWord = async () => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '016c0c1e1emsh61837d8c2c21561p190b02jsn9ebd0d8aa631',
-            'X-RapidAPI-Host': 'mashape-community-urban-dictionary.p.rapidapi.com'
+            'X-RapidAPI-Key': '',
+            'X-RapidAPI-Host': ''
         }
     };
     
